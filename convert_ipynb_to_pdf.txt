@@ -1,1 +1,3 @@
+Run in terminal:
+
 jupyter nbconvert <file_name>.ipynb --to pdf
