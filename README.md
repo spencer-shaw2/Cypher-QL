@@ -1,5 +1,4 @@
 # Start Here
-___________________________________________________________________________________________________________________________________________________________________________________________________
 
 This notebook will focus on interacting with a Neo4j database from Python focusing on the `OPTIONAL MATCH` cypher keyword. The downside to this, is it's hard to visualize some of the queries being ran. It's highly encourage to switch between the notebook and your local Neo4j Desktop database.
 
