@@ -1,6 +1,6 @@
 # Start Here
 
-This notebook will focus on interacting with a Neo4j database from Python focusing on the `OPTIONAL MATCH` cypher keyword. The downside to this, is it's hard to visualize some of the queries being ran. It's highly encourage to switch between the notebook and your local Neo4j Desktop database.
+These notebooks will focus on using Cypher and interacting with a Knowledge Graph from a python environment using Neo4j's Python driver. The downside to this, is it's hard to visualize some of the queries being ran. It's highly encourage to switch between the notebook and your local Neo4j Desktop database.
 
 To download Neo4j Desktop, follow the instructions [here.](https://neo4j.com/download/)
 
