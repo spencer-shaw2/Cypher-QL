@@ -148,9 +148,9 @@ class Neo4jParser:
                         continue
                     
                     # After index 0, each 'data_object' will contain actual data returned from the graph
-                    if isinstance(data_object, list):
-                        # Paths like to return neo4j.graph objects in lists, while non paths do not. So, we need to handle this
-                        data_object = data_object[0]
+                    # if isinstance(data_object, list):
+                    #     # Paths like to return neo4j.graph objects in lists, while non paths do not. So, we need to handle this
+                    #     data_object = data_object[0]
 
                     if isinstance(data_object, Node):
                         processed_records[column_header].append(Neo4jParser.process_node(data_object))
