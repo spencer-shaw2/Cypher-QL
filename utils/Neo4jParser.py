@@ -161,7 +161,12 @@ class Neo4jParser:
                     else:
                         processed_records[column_header].append(data_object)
                         # raise ValueError(f"Unexpected datatype encountered. Of type: {type(data_object)}")
-                    
+        
+        # If the result is length of 1 and index 0 is a list, then return the inner list
+        for key in processed_records.keys():
+            if (len(processed_records[key]) == 1) & (isinstance(processed_records[key][0], list)):
+                processed_records[key] = processed_records[key][0]
+
         if return_table:
             return pd.DataFrame(processed_records)
         else:
